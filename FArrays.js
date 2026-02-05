@@ -69,5 +69,17 @@ console.log(arrayFill.fill(5, 1));
 
 console.log(arrayFill.fill(6));
 
+//filter
+const palabras = ["spray", "elite", "exuberant", "destruction", "present"];
 
+const res = palabras.filter((palabras) => palabras.length > 6);
+
+console.log(result);
+
+//find
+const arrayFnd = [5, 12, 8, 130, 44];
+
+const found = arrayFnd.find((element) => element > 10);
+
+console.log(found);
 

@@ -27,4 +27,6 @@ tener en cuenta que el next() lo usamos teniendo en cuenta que estamos trabajand
 
  sintaxis: arr.fill(valor)
            arr.fill(valor,star)
-           arr.fill(valor,star,end)
+           arr.fill(valor,star,end).
+
+**filter:** crea un array el cual esta compuesto por elementos que cumplan la condicion que este en la funcion dada.
