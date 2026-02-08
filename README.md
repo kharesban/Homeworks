@@ -30,3 +30,13 @@ tener en cuenta que el next() lo usamos teniendo en cuenta que estamos trabajand
            arr.fill(valor,star,end).
 
 **filter:** crea un array el cual esta compuesto por elementos que cumplan la condicion que este en la funcion dada.
+
+**find:** devuelve el valor del primer elemento del array que cumpla la condicion de la funcion.
+
+**findIndex:**  Devuelve el indice(posicion) del primer elemento del array que cumpla con la función.
+
+**FindLast:** devuelve el valor del ultimo elemento del array que cumpla la condicion de la funcion.
+**FindLastIndex:**Devuelve el indice(posicion) del ultimo elemento del array que cumpla con la función.
+**flat:**
+**flatMap:**
+**forEach:**

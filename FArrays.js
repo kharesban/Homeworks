@@ -83,3 +83,13 @@ const found = arrayFnd.find((element) => element > 10);
 
 console.log(found);
 
+//findIndex
+const ejemploFIndx = (element) => element >10;
+console.log(ejemplo.findIndex(ejemploFIndx))
+
+//findLast
+const arrayFLast = [5, 12, 50, 130, 44];
+
+const found1 =  arrayFLast.findLast((element) => element > 45);
+
+console.log(found1);
