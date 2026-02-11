@@ -93,3 +93,18 @@ const arrayFLast = [5, 12, 50, 130, 44];
 const found1 =  arrayFLast.findLast((element) => element > 45);
 
 console.log(found1);
+
+//findLastIndex
+const foundLI = arrayFLast.findLastIndex((element) => element > 12);
+console.log(foundLI);
+
+//flat
+const arrFlat = [0, 1, [2, [3, [4, 5]]]];
+  console.log(arrFlat.flat(2));
+
+//flatMap
+var arrFM = [1, 2, 3, 4]
+arrFM.flatMap((x) => [x * 2]);
+
+//forEach
+palabras.forEach((element) => console.log(element))

@@ -36,7 +36,13 @@ tener en cuenta que el next() lo usamos teniendo en cuenta que estamos trabajand
 **findIndex:**  Devuelve el indice(posicion) del primer elemento del array que cumpla con la función.
 
 **FindLast:** devuelve el valor del ultimo elemento del array que cumpla la condicion de la funcion.
-**FindLastIndex:**Devuelve el indice(posicion) del ultimo elemento del array que cumpla con la función.
-**flat:**
-**flatMap:**
-**forEach:**
+
+**FindLastIndex:** Devuelve el indice(posicion) del ultimo elemento del array que cumpla con la función.
+
+**flat:** Crea una nueva matriz con todos los elementos del sub array (array dentro de otro array)concadenados recursivamente hasta la profundidad especificada.
+Cuando se habla de profundidad se refiere a que tan plano o que tantos subarrays queremos quitar en la nueva matriz
+    Ej: [0, 1, 2, [3, 4]] -> [0, 1, 2, 3, 4] -> Hay 2 array, se usa el flat() y quita 1 sub array y lo concatena para que asi quede es el array principal.
+
+**flatMap:** primero mapea mediante el uso de una funciòn y luego aplana el resultado en una matriz. 
+
+**forEach:** Ejecuta la funcion para cada elemento del array.
