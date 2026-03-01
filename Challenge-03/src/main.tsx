@@ -16,7 +16,8 @@ const misCanciones = [
     {id: 2, nombre: "EnDaño", artista: "3AM"},
     {id: 3, nombre: "Turista", artista: "Bad Bunny"},
     {id: 4, nombre: "El triste", artista: "Jose Jose"},
-    {id: 5, nombre: "The driver", artista: "Maneskin"}
+    {id: 5, nombre: "The driver", artista: "Maneskin"},
+    {id: 6, nombre: "Vida Facil", artista: "Neomai, Jeeiph"}
 ];
 
 
