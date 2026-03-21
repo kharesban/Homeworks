@@ -1,0 +1,33 @@
+import { useContext } from "react"
+import { AuthContext } from "./MyContext"
+import { Link } from "react-router-dom"; 
+
+
+function Menu(){
+   const {user} = useContext(AuthContext)
+
+
+    return (
+        <>
+        <h1>Bienvenido {user?.user}</h1>
+        <div>
+             <Link to="/Challenge04">
+                <button>Challenge04</button>
+            </Link>
+
+            <Link to="/Challenge05">
+            <button>Challenge05</button>
+            </Link>
+            
+
+        </div>
+        <Link to="/">
+            <button>Cerrar Sesion</button>
+        </Link>
+        
+
+        </>
+    )
+}
+
+export default Menu
