@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { PrivateRoute } from "./PrivateRoute";
+import { PrivateRoute } from "./PrivateRoute";  
 import Login from "./login";
 import Menu from "./dashboard";
 import Stack from "./Challenge4/listado";
 import AgregarLibros from "./Challenge4/verLibros";
 import AgregarPersonas from "./Challenge5/VerCola";
 import Queues from "./Challenge5/QuequeP";
+import Register from "./Register";
 const Icola = new Queues();
 
 
@@ -48,8 +49,9 @@ function App() {
     <Router>
       <Routes>
         {/* Rutas Públicas */}
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Login/>} />
         <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Register/>}/>
 
         {/* Rutas Privadas */}
         <Route 
