@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { db } from "./config";
+import { db } from "./firebase/config";
 import {
-  collection, query, where, getDocs,
+  collection, query, where, getDocs,getDoc,
   addDoc, updateDoc, deleteDoc,
   doc, serverTimestamp,
 } from "firebase/firestore";

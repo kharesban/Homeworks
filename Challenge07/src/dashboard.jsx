@@ -18,7 +18,10 @@ function Menu(){
             <Link to="/Challenge05">
             <button>Challenge05</button>
             </Link>
-            
+
+            <Link to="/task">
+            <button>Listado</button>
+            </Link>
 
         </div>
         <Link to="/">

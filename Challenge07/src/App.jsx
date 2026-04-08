@@ -7,6 +7,7 @@ import AgregarLibros from "./Challenge4/verLibros";
 import AgregarPersonas from "./Challenge5/VerCola";
 import Queues from "./Challenge5/QuequeP";
 import Register from "./Register";
+import Tasks from "./Tasks";
 const Icola = new Queues();
 
 
@@ -51,6 +52,7 @@ function App() {
         {/* Rutas Públicas */}
         <Route path="/" element={<Login/>} />
         <Route path="/login" element={<Login />} />
+        <Route path="/task" element={<Tasks/>}/>
         <Route path="/registro" element={<Register/>}/>
 
         {/* Rutas Privadas */}
@@ -75,6 +77,14 @@ function App() {
           element={
             <PrivateRoute>
               <AgregarPersonas cola={Icola } />
+            </PrivateRoute>
+          } 
+        />
+        <Route 
+          path="/Task" 
+          element={
+            <PrivateRoute>
+              <Tasks/>
             </PrivateRoute>
           } 
         />
