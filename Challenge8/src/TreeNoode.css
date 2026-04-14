@@ -1,0 +1,55 @@
+.tree {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.node-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.node {
+    background-color: #58a6ff;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    min-width: 40px;
+    z-index: 1;
+}
+
+.children {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.children::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    width: 100%;
+    height: 20px;
+    border-top: 2px solid #ccc;
+    z-index: 0;
+    transform: translateX(-50%);
+}
+
+.node-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 15px;
+    background: #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+}
