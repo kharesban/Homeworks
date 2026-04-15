@@ -1,0 +1,124 @@
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #b0abab;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.columnas {
+    display: flex;
+    gap: 20px;
+    height: calc(100vh - 120px);
+}
+
+.panel {
+    width: 300px;
+}
+
+.visor {
+    flex: 1;
+}
+
+.tarjeta {
+    background: #ecbdfb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+.tarjeta h3 {
+    margin: 0 0 15px 0;
+}
+
+.visor-tarjeta {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.arbol-contenedor {
+    flex: 1;
+    min-height: 500px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.arbol-vacio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #999;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.btn-primario {
+    width: 100%;
+    padding: 10px;
+    background: #7f34c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primario:hover {
+    background: #77138b;
+}
+
+.btn-cerrar {
+    width: 100%;
+    padding: 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-cerrar:hover {
+    background: #c82333;
+}
+
+.rd3t-node circle {
+    cursor: pointer;
+}
+
+.rd3t-node text {
+    font-size: 12px;
+    fill: #333;
+}
+
+.rd3t-link {
+    stroke: #999 !important;
+    stroke-width: 2px !important;
+}
