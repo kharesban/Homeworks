@@ -1,0 +1,115 @@
+.tarjeta-cancion {
+  position: relative;
+  background: #282828;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  &--pequeno {
+    width: 150px;
+
+    .tarjeta-cancion__info {
+      padding: 8px;
+    }
+
+    .tarjeta-cancion__titulo {
+      font-size: 0.9rem;
+    }
+  }
+
+  &--mediano {
+    width: 200px;
+
+    .tarjeta-cancion__info {
+      padding: 16px;
+    }
+  }
+
+  &--grande {
+    width: 280px;
+
+    .tarjeta-cancion__info {
+      padding: 24px;
+    }
+  }
+
+  &__portada {
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, #1DB954, #191414);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__placeholder {
+    font-size: 3rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__titulo {
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__artista {
+    font-size: 0.8rem;
+    color: #B3B3B3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__estadisticas {
+    margin-top: 4px;
+
+    .popularidad {
+      font-size: 0.75rem;
+      color: #1DB954;
+    }
+  }
+
+  &__reproducir {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    background: #1DB954;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &:hover &__reproducir {
+    opacity: 1;
+  }
+}

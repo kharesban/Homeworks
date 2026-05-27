@@ -1,0 +1,89 @@
+
+.tabla-ranking-container {
+  background: #282828;
+  border-radius: 12px;
+  padding: 24px;
+
+  .ranking-titulo {
+    margin-bottom: 24px;
+    font-size: 1.25rem;
+    color: #1DB954;
+  }
+}
+
+.tabla-ranking {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ranking-header {
+  display: grid;
+  grid-template-columns: 50px 2fr 1.5fr 1fr;
+  padding: 16px;
+  background: rgba(29, 185, 84, 0.1);
+  border-radius: 8px;
+  font-weight: bold;
+  color: #1DB954 !important;
+  font-size: 0.85rem;
+}
+
+.ranking-fila.top-1 .rank,
+.ranking-fila.top-1 .titulo,
+.ranking-fila.top-1 .artista,
+.ranking-fila.top-1 .popularidad,
+.ranking-fila.top-1 .popularidad .fire-icon {
+  color: #FFD700 !important;
+}
+
+.ranking-fila.top-2 .rank,
+.ranking-fila.top-2 .titulo,
+.ranking-fila.top-2 .artista,
+.ranking-fila.top-2 .popularidad,
+.ranking-fila.top-2 .popularidad .fire-icon {
+  color: #C0C0C0 !important;
+}
+
+.ranking-fila.top-3 .rank,
+.ranking-fila.top-3 .titulo,
+.ranking-fila.top-3 .artista,
+.ranking-fila.top-3 .popularidad,
+.ranking-fila.top-3 .popularidad .fire-icon {
+  color: #CD7F32 !important;
+}
+
+.ranking-fila:not(.top-1):not(.top-2):not(.top-3) .rank,
+.ranking-fila:not(.top-1):not(.top-2):not(.top-3) .titulo,
+.ranking-fila:not(.top-1):not(.top-2):not(.top-3) .artista,
+.ranking-fila:not(.top-1):not(.top-2):not(.top-3) .popularidad,
+.ranking-fila:not(.top-1):not(.top-2):not(.top-3) .popularidad .fire-icon {
+  color: #FFFFFF !important;
+}
+
+.ranking-fila .rank {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.ranking-fila .titulo {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ranking-fila .artista {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ranking-fila .popularidad .fire-icon {
+  margin-right: 4px;
+}
+
+.sin-canciones {
+  text-align: center;
+  color: #B3B3B3;
+  padding: 48px;
+}

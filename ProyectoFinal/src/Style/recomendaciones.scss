@@ -1,0 +1,69 @@
+.recomendaciones-container {
+  background: #282828;
+  border-radius: 12px;
+  padding: 24px;
+
+  h3 {
+    margin-bottom: 8px;
+    color: #1DB954;
+  }
+
+  .basado-en {
+    color: #B3B3B3;
+    font-size: 0.85rem;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #333333;
+  }
+
+  .placeholder,
+  .sin-recomendaciones {
+    text-align: center;
+    color: #B3B3B3;
+    padding: 32px;
+  }
+}
+
+.recomendaciones-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.recomendacion-tarjeta {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(29, 185, 84, 0.1);
+    transform: translateX(4px);
+  }
+
+  .tarjeta-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .cancion-titulo {
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .cancion-artista {
+      color: #B3B3B3;
+      font-size: 0.8rem;
+    }
+
+    .cancion-meta {
+      text-align: right;
+
+      .popularidad-badge {
+        color: #1DB954;
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
